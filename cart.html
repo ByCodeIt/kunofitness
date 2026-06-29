@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <!-- TITLE -->
+  <title>Cart — KunoFitness</title>
+
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- SEO -->
+  <meta name="description" content="Review your selected fitness equipment before checkout. Order via WhatsApp for fast delivery across Nigeria.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://kunofitness.com/cart.html">
+
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kunofitness.com/cart.html">
+  <meta property="og:title" content="Shopping Cart — KunoFitness">
+  <meta property="og:description" content="Review your selected fitness equipment before checkout. Order via WhatsApp for fast delivery across Nigeria.">
+  <meta property="og:image" content="https://kunofitness.com/assets/images/logo.png">
+  <meta property="og:site_name" content="KunoFitness">
+
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shopping Cart — KunoFitness">
+  <meta name="twitter:description" content="Review your selected fitness equipment before checkout. Order via WhatsApp for fast delivery across Nigeria.">
+  <meta name="twitter:image" content="https://kunofitness.com/assets/images/logo.png">
+
+</head>
+
+
+<body>
+<a href="#main-content" class="skip-nav">Skip to main content</a>
+
+
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 inset-x-0 z-50 border-b border-forge-700/60 bg-forge-900/90 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2.5"><img src="assets/images/logo.png" alt="KunoFitness" class="h-12 w-12 object-contain"><span class="font-display text-xl font-bold text-white tracking-widest uppercase">Kuno<span class="text-fire-500">Fitness</span></span></a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">Home</a>
+      <a href="products.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">Products</a>
+      <a href="blog.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">Blog</a>
+      <a href="about.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">About</a>
+      <a href="contact.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">Contact</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="cart.html" class="relative text-ash-300 hover:text-white transition-colors" aria-label="Shopping cart">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        <span class="cart-badge hidden absolute -top-1.5 -right-1.5 bg-fire-500 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
+      </a>
+      <button id="menu-btn" class="md:hidden text-ash-300 hover:text-white" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="mobile-menu-closed md:hidden border-t border-forge-700 bg-forge-900 px-4 py-4 flex flex-col gap-4">
+    <a href="index.html" class="text-ash-300 hover:text-white text-sm font-medium">Home</a>
+    <a href="products.html" class="text-ash-300 hover:text-white text-sm font-medium">Products</a>
+    <a href="blog.html" class="text-ash-300 hover:text-white text-sm font-medium">Blog</a>
+    <a href="about.html" class="text-ash-300 hover:text-white text-sm font-medium">About</a>
+    <a href="contact.html" class="text-ash-300 hover:text-white text-sm font-medium">Contact</a>
+  </div>
+</nav>
+
+<main id="main-content" class="pt-24 pb-20 max-w-7xl mx-auto px-4 sm:px-6">
+
+
+  <!-- PROGRESS -->
+  <div class="flex items-center mb-10 max-w-sm">
+    <!-- Step 1 — Cart (active) -->
+    <div class="flex flex-col items-center">
+      <div class="w-8 h-8 rounded-full bg-fire-600 flex items-center justify-center ring-2 ring-fire-600 ring-offset-2 ring-offset-forge-900 flex-shrink-0">
+        <span class="text-white text-xs font-bold">1</span>
+      </div>
+      <span class="text-white text-xs font-semibold uppercase tracking-widest mt-1.5">Cart</span>
+    </div>
+    <!-- Connector -->
+    <div class="flex-1 h-px bg-forge-700 mx-2 mb-3.5"></div>
+    <!-- Step 2 — Checkout (upcoming) -->
+    <div class="flex flex-col items-center">
+      <div class="w-8 h-8 rounded-full bg-forge-700 border border-forge-600 flex items-center justify-center flex-shrink-0">
+        <span class="text-ash-400 text-xs font-bold">2</span>
+      </div>
+      <span class="text-ash-500 text-xs font-medium uppercase tracking-widest mt-1.5">Checkout</span>
+    </div>
+    <!-- Connector -->
+    <div class="flex-1 h-px bg-forge-700 mx-2 mb-3.5"></div>
+    <!-- Step 3 — Confirmation (upcoming) -->
+    <div class="flex flex-col items-center">
+      <div class="w-8 h-8 rounded-full bg-forge-700 border border-forge-600 flex items-center justify-center flex-shrink-0">
+        <span class="text-ash-400 text-xs font-bold">3</span>
+      </div>
+      <span class="text-ash-500 text-xs font-medium uppercase tracking-widest mt-1.5">Done</span>
+    </div>
+  </div>
+
+
+  <div class="mb-10">
+    <p class="text-fire-500 text-xs font-bold uppercase tracking-widest mb-2">Your Selection</p>
+    <h1 class="font-display text-5xl font-bold text-white uppercase tracking-tight">Shopping Cart</h1>
+  </div>
+
+
+
+  <!-- EMPTY STATE -->
+  <div id="cart-empty" class="hidden text-center py-24">
+    <div class="w-20 h-20 bg-forge-800 border border-forge-700 rounded-full flex items-center justify-center mx-auto mb-6">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 text-ash-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+    </div>
+    <h2 class="font-display text-3xl font-bold text-white uppercase mb-3">Your cart is empty</h2>
+    <p class="text-ash-400 mb-8">Looks like you haven't added anything yet.</p>
+    <a href="products.html" class="inline-block bg-fire-600 hover:bg-fire-500 text-white font-bold uppercase tracking-widest text-sm px-8 py-3.5 rounded-xl transition-all">Browse Products</a>
+  </div>
+
+
+
+  <!-- CART SUMMARY -->
+  <div id="cart-summary" class="hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <!-- Items -->
+      <div class="lg:col-span-2">
+        <div id="cart-items"></div>
+        <div class="mt-6">
+          <a href="products.html" class="inline-flex items-center gap-2 text-ash-400 hover:text-white text-sm transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+            Continue Shopping
+          </a>
+        </div>
+      </div>
+
+
+
+      <!-- SUMMARY -->
+      <div class="lg:col-span-1">
+        <div class="bg-forge-800 border border-forge-700 rounded-2xl p-6 sticky top-24">
+          <h2 class="font-display text-2xl font-bold text-white uppercase tracking-tight mb-6">Order Summary</h2>
+          <div class="space-y-3 mb-6">
+            <div class="flex justify-between text-sm">
+              <span class="text-ash-400">Items (<span id="cart-count">0</span>)</span>
+              <span class="text-white font-medium" id="cart-total">₦0</span>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span class="text-ash-400">Delivery</span>
+              <span class="text-go font-medium">Negotiable</span>
+            </div>
+
+
+            <!-- DELIVERY ESTIMATE -->
+            <div>
+              <button id="delivery-toggle" aria-expanded="false" aria-controls="delivery-estimate" class="flex items-center gap-1 text-fire-400 hover:text-fire-300 text-xs transition-colors focus-ring">
+                <span id="delivery-toggle-label">View delivery estimates</span>
+                <svg id="delivery-chevron" xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 transition-transform duration-250" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              </button>
+              <div id="delivery-estimate" class="overflow-hidden" style="max-height:0;transition:max-height 0.25s ease" aria-hidden="true">
+                <div class="mt-3 space-y-1.5">
+                  <div class="flex justify-between text-xs">
+                    <span class="text-ash-400">Lagos Island / Mainland</span>
+                    <span class="text-white">₦2,000 – ₦3,500</span>
+                  </div>
+                  <div class="flex justify-between text-xs">
+                    <span class="text-ash-400">Lagos Outskirts</span>
+                    <span class="text-white">₦3,500 – ₦6,000</span>
+                  </div>
+                  <div class="flex justify-between text-xs">
+                    <span class="text-ash-400">Outside Lagos</span>
+                    <span class="text-white">₦6,000 – ₦15,000</span>
+                  </div>
+                  <p class="text-ash-500 text-xs italic pt-1">Final cost confirmed on WhatsApp before payment.</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="border-t border-forge-700 pt-3 flex justify-between">
+              <span class="text-white font-semibold">Total</span>
+              <span class="text-white font-bold text-lg" id="cart-total-final">₦0</span>
+            </div>
+          </div>
+          <a href="checkout.html" class="btn-primary block text-center">Proceed to Checkout</a>
+          <div class="mt-4 flex items-center justify-center gap-2 text-ash-500 text-xs">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            Secure checkout via WhatsApp
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+<!-- FOOTER -->
+<footer class="border-t border-forge-700 bg-forge-950 py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+    <a href="index.html" class="flex items-center gap-2"><img src="assets/images/logo.png" alt="KunoFitness" class="h-10 w-10 object-contain"><span class="font-display text-lg font-bold text-white tracking-widest uppercase">Kuno<span class="text-fire-500">Fitness</span></span></a>
+    <p class="text-ash-500 text-xs">© <span class="copyright-year">2026</span> KunoFitness. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+<script type="module">
+  import { renderCartPage, getCartTotal } from "./js/cart.js";
+  import "./js/main.js";
+
+  renderCartPage();
+
+  // Keep both total els in sync
+  const observer = new MutationObserver(() => {
+    const t = document.getElementById("cart-total");
+    const tf = document.getElementById("cart-total-final");
+    if (t && tf) tf.textContent = t.textContent;
+  });
+  const t = document.getElementById("cart-total");
+  if (t) observer.observe(t, { childList: true, characterData: true, subtree: true });
+
+  // Delivery estimate toggle
+  const toggleBtn   = document.getElementById("delivery-toggle");
+  const estimateEl  = document.getElementById("delivery-estimate");
+  const chevronEl   = document.getElementById("delivery-chevron");
+  const toggleLabel = document.getElementById("delivery-toggle-label");
+
+  toggleBtn?.addEventListener("click", () => {
+    const isOpen = estimateEl.style.maxHeight !== "0px" && estimateEl.style.maxHeight !== "";
+    if (isOpen) {
+      estimateEl.style.maxHeight = "0";
+      estimateEl.setAttribute("aria-hidden", "true");
+      toggleBtn.setAttribute("aria-expanded", "false");
+      chevronEl.style.transform = "rotate(0deg)";
+      toggleLabel.textContent = "View delivery estimates";
+    } else {
+      estimateEl.style.maxHeight = estimateEl.scrollHeight + "px";
+      estimateEl.setAttribute("aria-hidden", "false");
+      toggleBtn.setAttribute("aria-expanded", "true");
+      chevronEl.style.transform = "rotate(90deg)";
+      toggleLabel.textContent = "Hide delivery estimates";
+    }
+  });
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <!-- TITLE -->
+  <title>KunoFitness — Premium Fitness Equipment</title>
+
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+
+
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- SEO -->
+  <meta name="description" content="Shop world-class fitness equipment in Nigeria. Strength, cardio, and recovery gear for serious athletes and home gym builders. Order via WhatsApp.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kunofitness.com/">
+
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kunofitness.com/">
+  <meta property="og:title" content="KunoFitness — Premium Fitness Equipment">
+  <meta property="og:description" content="Shop world-class fitness equipment in Nigeria. Strength, cardio, and recovery gear for serious athletes and home gym builders. Order via WhatsApp.">
+  <meta property="og:image" content="https://kunofitness.com/assets/images/logo.png">
+  <meta property="og:site_name" content="KunoFitness">
+
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KunoFitness — Premium Fitness Equipment">
+  <meta name="twitter:description" content="Shop world-class fitness equipment in Nigeria. Strength, cardio, and recovery gear for serious athletes and home gym builders. Order via WhatsApp.">
+  <meta name="twitter:image" content="https://kunofitness.com/assets/images/logo.png">
+
+
+  <!-- SCHEMA ORG -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://kunofitness.com/#organization",
+        "name": "KunoFitness",
+        "url": "https://kunofitness.com",
+        "logo": "https://kunofitness.com/assets/images/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "availableLanguage": "English",
+          "areaServed": "NG"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lagos",
+          "addressCountry": "NG"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://kunofitness.com/#website",
+        "url": "https://kunofitness.com",
+        "name": "KunoFitness",
+        "publisher": { "@id": "https://kunofitness.com/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://kunofitness.com/products.html?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+
+<body class="hero-bg">
+<a href="#main-content" class="skip-nav">Skip to main content</a>
+
+
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 inset-x-0 z-50 border-b border-forge-700/60 bg-forge-900/90 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2.5"><img src="assets/images/logo.png" alt="KunoFitness" class="h-12 w-12 object-contain"><span class="font-display text-xl font-bold text-white tracking-widest uppercase">Kuno<span class="text-fire-500">Fitness</span></span></a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">Home</a>
+      <a href="products.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">Products</a>
+      <a href="blog.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">Blog</a>
+      <a href="about.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">About</a>
+      <a href="contact.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">Contact</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="cart.html" class="relative text-ash-300 hover:text-white transition-colors" aria-label="Shopping cart">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        <span class="cart-badge hidden absolute -top-1.5 -right-1.5 bg-fire-500 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
+      </a>
+      <button id="menu-btn" class="md:hidden text-ash-300 hover:text-white" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="mobile-menu-closed md:hidden border-t border-forge-700 bg-forge-900 px-4 py-4 flex flex-col gap-4">
+    <a href="index.html" class="text-ash-300 hover:text-white text-sm font-medium">Home</a>
+    <a href="products.html" class="text-ash-300 hover:text-white text-sm font-medium">Products</a>
+    <a href="blog.html" class="text-ash-300 hover:text-white text-sm font-medium">Blog</a>
+    <a href="about.html" class="text-ash-300 hover:text-white text-sm font-medium">About</a>
+    <a href="contact.html" class="text-ash-300 hover:text-white text-sm font-medium">Contact</a>
+  </div>
+</nav>
+
+
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center pt-16 overflow-hidden">
+  <!-- Background accent -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-fire-600/10 blur-[120px]"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-fire-600/5 blur-[100px]"></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-20 w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <span class="inline-flex items-center gap-2 bg-fire-600/15 text-fire-400 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-6 border border-fire-600/25">
+          <span class="w-1.5 h-1.5 bg-fire-500 rounded-full animate-pulse"></span>
+          Premium Fitness Equipment
+        </span>
+        <h1 class="font-display font-extrabold text-white uppercase leading-none mb-6" style="font-size:clamp(3.5rem,8vw,6rem);letter-spacing:-0.02em;">
+          BUILT TO<br><span class="text-fire-500">PUSH</span><br>YOUR LIMITS
+        </h1>
+        <p class="text-ash-300 text-lg leading-relaxed mb-10 max-w-lg">
+          Professional-grade gym equipment for serious athletes and home gym builders. No compromise. No excuses.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="products.html" class="btn-primary">Shop Equipment</a>
+          <a href="about.html" class="btn-secondary">Our Story</a>
+        </div>
+        <div class="flex items-center gap-8 mt-12 pt-8 border-t border-forge-700">
+          <div><p class="font-display text-3xl font-bold text-white">500+</p><p class="text-ash-400 text-sm mt-0.5">Happy Athletes</p></div>
+          <div class="w-px h-10 bg-forge-700"></div>
+          <div><p class="font-display text-3xl font-bold text-white">50+</p><p class="text-ash-400 text-sm mt-0.5">Products</p></div>
+          <div class="w-px h-10 bg-forge-700"></div>
+          <div><p class="font-display text-3xl font-bold text-white">2-Day</p><p class="text-ash-400 text-sm mt-0.5">Delivery</p></div>
+        </div>
+      </div>
+      <div class="relative hidden lg:block">
+        <div class="relative rounded-3xl overflow-hidden border border-forge-700">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=700&q=85" alt="Fitness Equipment" class="w-full h-[560px] object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-forge-900/60 via-transparent to-transparent"></div>
+        </div>
+        <!-- Floating card -->
+        <div class="absolute -bottom-4 -left-8 bg-forge-800 border border-forge-700 rounded-2xl p-4 shadow-xl">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/logo.png" alt="KunoFitness" class="w-12 h-12 object-contain flex-shrink-0">
+            <div>
+              <p class="text-white font-semibold text-sm">KunoFitness</p>
+              <p class="text-ash-400 text-xs">4.8★ avg · 500+ customers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CATEGORIES -->
+<section data-reveal class="py-20 border-t border-forge-700/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex items-end justify-between mb-10">
+      <div>
+        <p class="text-fire-500 text-xs font-bold uppercase tracking-widest mb-2">Browse by type</p>
+        <h2 class="font-display text-4xl font-bold text-white uppercase tracking-tight">Categories</h2>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <a href="products.html?category=Strength" class="group relative rounded-2xl overflow-hidden h-40 bg-forge-800 border border-forge-700 hover:border-fire-600 transition-all duration-300">
+        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&q=75" alt="Strength" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-500">
+        <div class="absolute inset-0 flex items-end p-4">
+          <div>
+            <p class="font-display text-xl font-bold text-white uppercase tracking-wide">Strength</p>
+            <p class="text-ash-400 text-xs">Barbells, Dumbbells & More</p>
+          </div>
+        </div>
+      </a>
+      <a href="products.html?category=Cardio" class="group relative rounded-2xl overflow-hidden h-40 bg-forge-800 border border-forge-700 hover:border-fire-600 transition-all duration-300">
+        <img src="https://images.unsplash.com/photo-1570829460005-c840387bb1ca?w=400&q=75" alt="Cardio" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-500">
+        <div class="absolute inset-0 flex items-end p-4">
+          <div>
+            <p class="font-display text-xl font-bold text-white uppercase tracking-wide">Cardio</p>
+            <p class="text-ash-400 text-xs">Treadmills, Bikes & More</p>
+          </div>
+        </div>
+      </a>
+      <a href="products.html?category=Accessories" class="group relative rounded-2xl overflow-hidden h-40 bg-forge-800 border border-forge-700 hover:border-fire-600 transition-all duration-300">
+        <img src="https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=400&q=75" alt="Accessories" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-500">
+        <div class="absolute inset-0 flex items-end p-4">
+          <div>
+            <p class="font-display text-xl font-bold text-white uppercase tracking-wide">Accessories</p>
+            <p class="text-ash-400 text-xs">Bands, Mats & More</p>
+          </div>
+        </div>
+      </a>
+      <a href="products.html?category=Recovery" class="group relative rounded-2xl overflow-hidden h-40 bg-forge-800 border border-forge-700 hover:border-fire-600 transition-all duration-300">
+        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&q=75" alt="Recovery" class="w-full h-full object-cover opacity-50 group-hover:opacity-70 group-hover:scale-105 transition-all duration-500">
+        <div class="absolute inset-0 flex items-end p-4">
+          <div>
+            <p class="font-display text-xl font-bold text-white uppercase tracking-wide">Recovery</p>
+            <p class="text-ash-400 text-xs">Foam Rollers & More</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FEATURED PRODUCTS -->
+<section data-reveal class="py-20 border-t border-forge-700/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex items-end justify-between mb-10">
+      <div>
+        <p class="text-fire-500 text-xs font-bold uppercase tracking-widest mb-2">Hand-picked</p>
+        <h2 class="font-display text-4xl font-bold text-white uppercase tracking-tight">Featured Products</h2>
+      </div>
+      <a href="products.html" class="btn-secondary text-sm hidden sm:inline-block">View All</a>
+    </div>
+    <div id="featured-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <!-- Loaded by JS -->
+      <div class="col-span-full text-center py-12 text-ash-400">Loading products…</div>
+    </div>
+    <div class="text-center mt-10 sm:hidden">
+      <a href="products.html" class="btn-secondary">View All Products</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- WHY KUNOFITNESS -->
+<section data-reveal class="py-20 border-t border-forge-700/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-14">
+      <p class="text-fire-500 text-xs font-bold uppercase tracking-widest mb-2">Why choose us</p>
+      <h2 class="font-display text-4xl font-bold text-white uppercase tracking-tight">Built Different</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div data-reveal data-reveal-delay="0" class="bg-forge-800 border border-forge-700 rounded-2xl p-6">
+        <div class="w-12 h-12 bg-fire-600/15 rounded-xl flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-fire-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <h3 class="font-semibold text-white mb-2">Quality Guaranteed</h3>
+        <p class="text-ash-400 text-sm leading-relaxed">Every product passes strict quality control before it ships to you.</p>
+      </div>
+      <div data-reveal data-reveal-delay="80" class="bg-forge-800 border border-forge-700 rounded-2xl p-6">
+        <div class="w-12 h-12 bg-fire-600/15 rounded-xl flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-fire-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3 class="font-semibold text-white mb-2">Fast Delivery</h3>
+        <p class="text-ash-400 text-sm leading-relaxed">2-day delivery across Lagos. Nationwide shipping in 3–5 days.</p>
+      </div>
+      <div data-reveal data-reveal-delay="160" class="bg-forge-800 border border-forge-700 rounded-2xl p-6">
+        <div class="w-12 h-12 bg-fire-600/15 rounded-xl flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-fire-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+        </div>
+        <h3 class="font-semibold text-white mb-2">WhatsApp Support</h3>
+        <p class="text-ash-400 text-sm leading-relaxed">Order directly on WhatsApp. Real humans, fast replies.</p>
+      </div>
+      <div data-reveal data-reveal-delay="240" class="bg-forge-800 border border-forge-700 rounded-2xl p-6">
+        <div class="w-12 h-12 bg-fire-600/15 rounded-xl flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-fire-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+        </div>
+        <h3 class="font-semibold text-white mb-2">Easy Returns</h3>
+        <p class="text-ash-400 text-sm leading-relaxed">Not happy? Return within 7 days — no questions asked.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CTA BANNER -->
+<section data-reveal class="py-20 border-t border-forge-700/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="relative rounded-3xl overflow-hidden bg-fire-600 p-10 md:p-16 text-center">
+      <div class="absolute inset-0 opacity-10 pointer-events-none" style="background:repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%); background-size:20px 20px;"></div>
+      <h2 class="font-display text-4xl md:text-6xl font-extrabold text-white uppercase tracking-tight mb-4">Ready to Start?</h2>
+      <p class="text-white/80 text-lg mb-8 max-w-lg mx-auto">Build your home gym today. Browse our full catalogue and order in minutes via WhatsApp.</p>
+      <a href="products.html" class="inline-block bg-white text-fire-600 font-bold uppercase tracking-widest text-sm px-8 py-3.5 rounded-xl hover:bg-ash-100 transition-colors">Shop All Products</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="border-t border-forge-700 bg-forge-950 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-10">
+      <div class="col-span-2 md:col-span-1">
+        <a href="index.html" class="flex items-center gap-2.5"><img src="assets/images/logo.png" alt="KunoFitness" class="h-12 w-12 object-contain"><span class="font-display text-xl font-bold text-white tracking-widest uppercase">Kuno<span class="text-fire-500">Fitness</span></span></a>
+        <p class="text-ash-400 text-sm mt-3 leading-relaxed">Premium fitness equipment for serious athletes.</p>
+      </div>
+      <div>
+        <p class="text-white font-semibold text-sm mb-4">Shop</p>
+        <div class="flex flex-col gap-2">
+          <a href="products.html?category=Strength" class="text-ash-400 hover:text-white text-sm transition-colors">Strength</a>
+          <a href="products.html?category=Cardio" class="text-ash-400 hover:text-white text-sm transition-colors">Cardio</a>
+          <a href="products.html?category=Accessories" class="text-ash-400 hover:text-white text-sm transition-colors">Accessories</a>
+          <a href="products.html?category=Recovery" class="text-ash-400 hover:text-white text-sm transition-colors">Recovery</a>
+        </div>
+      </div>
+      <div>
+        <p class="text-white font-semibold text-sm mb-4">Company</p>
+        <div class="flex flex-col gap-2">
+          <a href="about.html" class="text-ash-400 hover:text-white text-sm transition-colors">About</a>
+          <a href="blog.html" class="text-ash-400 hover:text-white text-sm transition-colors">Blog</a>
+          <a href="contact.html" class="text-ash-400 hover:text-white text-sm transition-colors">Contact</a>
+        </div>
+      </div>
+      <div>
+        <p class="text-white font-semibold text-sm mb-4">Contact</p>
+        <div class="flex flex-col gap-2">
+          <a href="https://wa.me/2348012345678" target="_blank" rel="noopener noreferrer" class="text-ash-400 hover:text-white text-sm transition-colors">WhatsApp</a>
+          <a href="mailto:hello@kunofitness.com" class="text-ash-400 hover:text-white text-sm transition-colors">hello@kunofitness.com</a>
+          <p class="text-ash-400 text-sm">Lagos, Nigeria</p>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-forge-700 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-ash-500 text-xs">© <span class="copyright-year">2026</span> KunoFitness. All rights reserved.</p>
+      <p class="text-ash-500 text-xs">Designed & built with ❤️ by ByCodeIt Studio</p>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+<script type="module">
+  import { renderFeaturedProducts } from "./js/products.js";
+  import "./js/main.js";
+  renderFeaturedProducts("featured-grid");
+</script>
+
+
+</body>
+</html>

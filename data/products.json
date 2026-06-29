@@ -1,0 +1,207 @@
+[
+  {
+    "id": 1,
+    "name": "Pro Barbell 20kg",
+    "category": "Strength",
+    "price": 85000,
+    "oldPrice": 110000,
+    "description": "Olympic-grade steel barbell with knurled grip. Built for heavy lifts — squats, deadlifts, bench press. Rated to 680kg.",
+    "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80",
+      "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&q=80"
+    ],
+    "inStock": true,
+    "featured": true,
+    "badge": "Best Seller",
+    "rating": 4.8,
+    "reviews": 124
+  },
+  {
+    "id": 2,
+    "name": "Adjustable Dumbbell Set",
+    "category": "Strength",
+    "price": 65000,
+    "oldPrice": null,
+    "description": "Selectorized dumbbell replacing 15 pairs. Dial to switch weight from 2.5kg to 24kg in seconds. Space-saving home gym essential.",
+    "image": "https://images.unsplash.com/photo-1584466977773-e625c37cdd50?w=600&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1584466977773-e625c37cdd50?w=600&q=80"
+    ],
+    "inStock": true,
+    "featured": true,
+    "badge": "New",
+    "rating": 4.7,
+    "reviews": 89
+  },
+  {
+    "id": 3,
+    "name": "Heavy Duty Resistance Bands",
+    "category": "Accessories",
+    "price": 8500,
+    "oldPrice": 12000,
+    "description": "Set of 5 resistance bands: 5kg to 40kg. Latex-free, anti-snap construction. Perfect for stretching, activation, and assisted pull-ups.",
+    "image": "https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=600&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=600&q=80"
+    ],
+    "inStock": true,
+    "featured": false,
+    "badge": "Sale",
+    "rating": 4.6,
+    "reviews": 212
+  },
+  {
+    "id": 4,
+    "name": "Pull-Up Bar Pro",
+    "category": "Strength",
+    "price": 18500,
+    "oldPrice": null,
+    "description": "Multi-grip doorframe pull-up bar. Fits 60–100cm door frames. No screws needed. Supports up to 150kg. Foam-padded grips.",
+    "image": "https://images.unsplash.com/photo-1616803689943-5601631c7fec?w=600&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1616803689943-5601631c7fec?w=600&q=80"
+    ],
+    "inStock": true,
+    "featured": false,
+    "badge": null,
+    "rating": 4.5,
+    "reviews": 67
+  },
+  {
+    "id": 5,
+    "name": "Foldable Treadmill T3",
+    "category": "Cardio",
+    "price": 285000,
+    "oldPrice": 320000,
+    "description": "3.5HP motor. 15 speed settings (1–18km/h). 12 pre-set programs. LCD display. Folds flat for easy storage. Max user weight: 120kg.",
+    "image": "https://images.unsplash.com/photo-1570829460005-c840387bb1ca?w=600&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1570829460005-c840387bb1ca?w=600&q=80"
+    ],
+    "inStock": true,
+    "featured": true,
+    "badge": "Sale",
+    "rating": 4.9,
+    "reviews": 43
+  },
+  {
+    "id": 6,
+    "name": "Kettlebell Set 8–24kg",
+    "category": "Strength",
+    "price": 52000,
+    "oldPrice": null,
+    "description": "Cast iron kettlebell set: 8kg, 12kg, 16kg, 20kg, 24kg. Flat base for easy stacking. Colour-coded by weight. Ideal for HIIT and functional training.",
+    "image": "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=600&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=600&q=80"
+    ],
+    "inStock": false,
+    "featured": false,
+    "badge": "Out of Stock",
+    "rating": 4.7,
+    "reviews": 98
+  },
+  {
+    "id": 7,
+    "name": "Premium Yoga Mat 6mm",
+    "category": "Accessories",
+    "price": 12000,
+    "oldPrice": null,
+    "description": "Non-slip TPE yoga mat. 183cm × 61cm × 6mm. Eco-friendly and sweat-resistant. Alignment lines printed for posture correction.",
+    "image": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=600&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=600&q=80"
+    ],
+    "inStock": true,
+    "featured": false,
+    "badge": null,
+    "rating": 4.4,
+    "reviews": 155
+  },
+  {
+    "id": 8,
+    "name": "Stationary Spin Bike X2",
+    "category": "Cardio",
+    "price": 145000,
+    "oldPrice": 180000,
+    "description": "Belt-driven magnetic resistance. 20kg flywheel. Adjustable handlebars and seat. LCD monitor tracks speed, distance, time, and calories.",
+    "image": "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?w=600&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?w=600&q=80"
+    ],
+    "inStock": true,
+    "featured": true,
+    "badge": "Sale",
+    "rating": 4.8,
+    "reviews": 76
+  },
+  {
+    "id": 9,
+    "name": "Jump Rope Speed Cable",
+    "category": "Accessories",
+    "price": 4500,
+    "oldPrice": null,
+    "description": "Ball-bearing speed rope with adjustable steel cable. Foam handles. Ideal for double unders and cardio warmups. Carry bag included.",
+    "image": "https://images.unsplash.com/photo-1598971639058-fab3c3109a34?w=600&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1598971639058-fab3c3109a34?w=600&q=80"
+    ],
+    "inStock": true,
+    "featured": false,
+    "badge": null,
+    "rating": 4.3,
+    "reviews": 201
+  },
+  {
+    "id": 10,
+    "name": "Foam Roller Deep Tissue",
+    "category": "Recovery",
+    "price": 7500,
+    "oldPrice": null,
+    "description": "High-density EVA foam roller. 30cm length. Grid pattern for trigger point therapy. Relieves muscle soreness and improves flexibility.",
+    "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80"
+    ],
+    "inStock": true,
+    "featured": false,
+    "badge": null,
+    "rating": 4.5,
+    "reviews": 88
+  },
+  {
+    "id": 11,
+    "name": "Weight Bench Adjustable",
+    "category": "Strength",
+    "price": 48000,
+    "oldPrice": 60000,
+    "description": "7-position adjustable FID bench. 300kg capacity. Foldable design for storage. Non-slip feet. Padded seat and backrest.",
+    "image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=80"
+    ],
+    "inStock": true,
+    "featured": false,
+    "badge": "Sale",
+    "rating": 4.6,
+    "reviews": 54
+  },
+  {
+    "id": 12,
+    "name": "Ab Wheel Pro",
+    "category": "Accessories",
+    "price": 5500,
+    "oldPrice": null,
+    "description": "Wide dual-wheel ab roller for stability. Non-slip handles. Extra-thick kneepad included. Targets core, arms, and back.",
+    "image": "https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?w=600&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?w=600&q=80"
+    ],
+    "inStock": true,
+    "featured": false,
+    "badge": null,
+    "rating": 4.2,
+    "reviews": 143
+  }
+]

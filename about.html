@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <!-- TITLE -->
+  <title>About Us — KunoFitness</title>
+
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- SEO -->
+  <meta name="description" content="KunoFitness was born from a mission to bring world-class gym equipment to Nigerian athletes and home gym builders. No middlemen. No compromises.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kunofitness.com/about.html">
+
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kunofitness.com/about.html">
+  <meta property="og:title" content="About Us — KunoFitness">
+  <meta property="og:description" content="KunoFitness was born from a mission to bring world-class gym equipment to Nigerian athletes and home gym builders. No middlemen. No compromises.">
+  <meta property="og:image" content="https://kunofitness.com/assets/images/logo.png">
+  <meta property="og:site_name" content="KunoFitness">
+
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Us — KunoFitness">
+  <meta name="twitter:description" content="KunoFitness was born from a mission to bring world-class gym equipment to Nigerian athletes and home gym builders. No middlemen. No compromises.">
+  <meta name="twitter:image" content="https://kunofitness.com/assets/images/logo.png">
+
+
+  <!-- SCHEMA ORG -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About KunoFitness",
+    "url": "https://kunofitness.com/about.html",
+    "description": "KunoFitness brings world-class gym equipment to Nigerian athletes and home gym builders.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "KunoFitness",
+      "url": "https://kunofitness.com",
+      "logo": "https://kunofitness.com/assets/images/logo.png"
+    }
+  }
+  </script>
+
+</head>
+
+
+<body>
+<a href="#main-content" class="skip-nav">Skip to main content</a>
+
+
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 inset-x-0 z-50 border-b border-forge-700/60 bg-forge-900/90 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2.5"><img src="assets/images/logo.png" alt="KunoFitness" class="h-12 w-12 object-contain"><span class="font-display text-xl font-bold text-white tracking-widest uppercase">Kuno<span class="text-fire-500">Fitness</span></span></a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="index.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">Home</a>
+      <a href="products.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">Products</a>
+      <a href="blog.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">Blog</a>
+      <a href="about.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">About</a>
+      <a href="contact.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">Contact</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="cart.html" class="relative text-ash-300 hover:text-white transition-colors" aria-label="Shopping cart">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        <span class="cart-badge hidden absolute -top-1.5 -right-1.5 bg-fire-500 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
+      </a>
+      <button id="menu-btn" class="md:hidden text-ash-300 hover:text-white" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu" class="mobile-menu-closed md:hidden border-t border-forge-700 bg-forge-900 px-4 py-4 flex flex-col gap-4">
+    <a href="index.html" class="text-ash-300 hover:text-white text-sm font-medium">Home</a>
+    <a href="products.html" class="text-ash-300 hover:text-white text-sm font-medium">Products</a>
+    <a href="blog.html" class="text-ash-300 hover:text-white text-sm font-medium">Blog</a>
+    <a href="about.html" class="text-ash-300 hover:text-white text-sm font-medium">About</a>
+    <a href="contact.html" class="text-ash-300 hover:text-white text-sm font-medium">Contact</a>
+  </div>
+</nav>
+
+
+
+<!-- HERO -->
+<section class="relative pt-36 pb-20 overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-fire-600/8 blur-[120px]"></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <p class="text-fire-500 text-xs font-bold uppercase tracking-widest mb-3">Our Story</p>
+        <h1 class="font-display font-extrabold text-white uppercase leading-none mb-6" style="font-size:clamp(3rem,7vw,5rem);letter-spacing:-0.02em;">
+          WE LIVE &<br><span class="text-fire-500">BREATHE</span><br>FITNESS
+        </h1>
+        <p class="text-ash-300 text-lg leading-relaxed mb-6">
+          KunoFitness was born from a simple frustration — great fitness equipment was too hard to find in Nigeria, and when you did find it, the quality never matched the price.
+        </p>
+        <p class="text-ash-400 leading-relaxed mb-8">
+          We set out to change that. Today, we source and deliver world-class gym equipment directly to athletes, coaches, and home gym builders across the country. No middlemen. No compromises.
+        </p>
+        <a href="products.html" class="btn-primary">Shop Now</a>
+      </div>
+      <div class="relative rounded-3xl overflow-hidden border border-forge-700 hidden lg:block">
+        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=700&q=85" alt="KunoFitness gym" class="w-full h-[480px] object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-forge-900/50 via-transparent to-transparent"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- VALUES -->
+<section class="py-20 border-t border-forge-700/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-14">
+      <p class="text-fire-500 text-xs font-bold uppercase tracking-widest mb-2">What drives us</p>
+      <h2 class="font-display text-4xl font-bold text-white uppercase tracking-tight">Our Values</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <div class="bg-forge-800 border border-forge-700 rounded-2xl p-8 text-center">
+        <div class="w-14 h-14 bg-fire-600/15 rounded-2xl flex items-center justify-center mx-auto mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-fire-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-bold text-white uppercase tracking-tight mb-3">Quality First</h3>
+        <p class="text-ash-400 text-sm leading-relaxed">We only stock equipment we'd use ourselves. Every product is tested and verified before it reaches you.</p>
+      </div>
+      <div class="bg-forge-800 border border-forge-700 rounded-2xl p-8 text-center">
+        <div class="w-14 h-14 bg-fire-600/15 rounded-2xl flex items-center justify-center mx-auto mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-fire-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-bold text-white uppercase tracking-tight mb-3">Community</h3>
+        <p class="text-ash-400 text-sm leading-relaxed">We're building a fitness community in Nigeria — one home gym at a time. Your goals are our goals.</p>
+      </div>
+      <div class="bg-forge-800 border border-forge-700 rounded-2xl p-8 text-center">
+        <div class="w-14 h-14 bg-fire-600/15 rounded-2xl flex items-center justify-center mx-auto mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-fire-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-bold text-white uppercase tracking-tight mb-3">No Excuses</h3>
+        <p class="text-ash-400 text-sm leading-relaxed">Fast delivery, honest pricing, and real support. We make it easy to get the gear and get to work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- STATS -->
+<section class="py-16 border-t border-forge-700/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <p class="font-display text-5xl font-extrabold text-fire-500 mb-2">500+</p>
+        <p class="text-ash-400 text-sm">Happy Customers</p>
+      </div>
+      <div>
+        <p class="font-display text-5xl font-extrabold text-fire-500 mb-2">50+</p>
+        <p class="text-ash-400 text-sm">Products in Stock</p>
+      </div>
+      <div>
+        <p class="font-display text-5xl font-extrabold text-fire-500 mb-2">5yr</p>
+        <p class="text-ash-400 text-sm">In Business</p>
+      </div>
+      <div>
+        <p class="font-display text-5xl font-extrabold text-fire-500 mb-2">4.8★</p>
+        <p class="text-ash-400 text-sm">Average Rating</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CTA -->
+<section class="py-20 border-t border-forge-700/50">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+    <h2 class="font-display text-4xl font-bold text-white uppercase tracking-tight mb-4">Ready to Build Your Gym?</h2>
+    <p class="text-ash-400 mb-8">Browse our catalogue and order via WhatsApp — it takes less than 5 minutes.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="products.html" class="btn-primary">Browse Products</a>
+      <a href="contact.html" class="border border-forge-600 hover:border-ash-400 text-ash-300 hover:text-white font-semibold text-sm px-8 py-3 rounded-xl transition-all inline-block">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="border-t border-forge-700 bg-forge-950 py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+    <a href="index.html" class="flex items-center gap-2"><img src="assets/images/logo.png" alt="KunoFitness" class="h-10 w-10 object-contain"><span class="font-display text-lg font-bold text-white tracking-widest uppercase">Kuno<span class="text-fire-500">Fitness</span></span></a>
+    <p class="text-ash-500 text-xs">© <span class="copyright-year">2026</span> KunoFitness. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+<script type="module">
+  import "./js/main.js";
+</script>
+
+
+</body>
+</html>

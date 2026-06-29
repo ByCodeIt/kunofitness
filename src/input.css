@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* ── Tell Tailwind where to scan for classes ─────────────────── */
+@source "../*.html";
+@source "../js/**/*.js";
+
+@theme {
+  /* ── Forge — deep charcoal ─────────────────────────── */
+  --color-forge-950: #0A0A0B;
+  --color-forge-900: #111113;
+  --color-forge-800: #1C1C1F;
+  --color-forge-700: #2A2A2E;
+  --color-forge-600: #3A3A3F;
+
+  /* ── Fire — electric red ───────────────────────────── */
+  --color-fire-600: #C41F2F;
+  --color-fire-500: #E02030;
+  --color-fire-400: #F03040;
+  --color-fire-300: #FF6070;
+
+  /* ── Ash — neutral grays ───────────────────────────── */
+  --color-ash-100: #F5F5F5;
+  --color-ash-200: #E8E8E8;
+  --color-ash-300: #CCCCCC;
+  --color-ash-400: #999999;
+  --color-ash-500: #666666;
+
+  /* ── Go — success green ────────────────────────────── */
+  --color-go: #22C55E;
+
+  /* ── Fonts ─────────────────────────────────────────── */
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  /* ── Shadows ───────────────────────────────────────── */
+  --shadow-card: 0 2px 16px 0 rgba(0, 0, 0, 0.10);
+  --shadow-card-hover: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+  --shadow-fire: 0 4px 24px 0 rgba(196, 31, 47, 0.30);
+}

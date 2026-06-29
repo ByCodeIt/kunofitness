@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build artifacts (regenerate with: npm run build)
+# src/output.css
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+*.log
