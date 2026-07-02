@@ -2,19 +2,19 @@ import { getCart, getCartTotal, clearCart } from "./cart.js";
 import { formatPrice, sanitize } from "./main.js";
 
 // ← Replace with client's real WhatsApp number (no + or spaces)
-const WHATSAPP_NUMBER = "2348012345678";
+const WHATSAPP_NUMBER = "2348090555745"; // KunoFitness number
 
-// ─── Order Reference Generator ────────────────────────────────
+// Order Reference Generator
 export function generateOrderRef() {
   const now    = new Date();
   const date   = now.getFullYear().toString()
-               + String(now.getMonth() + 1).padStart(2, "0")
-               + String(now.getDate()).padStart(2, "0");
+              + String(now.getMonth() + 1).padStart(2, "0")
+              + String(now.getDate()).padStart(2, "0");
   const suffix = String(Math.floor(Math.random() * 1000)).padStart(3, "0");
   return `KF-${date}-${suffix}`;
 }
 
-// ─── Build WhatsApp Order Message ─────────────────────────────
+// Build WhatsApp Order Message
 export function buildWhatsAppOrder(customerInfo, orderRef, cart, total) {
   if (!cart.length) return null;
 

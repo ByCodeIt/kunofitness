@@ -70,7 +70,13 @@
 
 
   <!-- PROGRESS -->
-  <div class="flex items-center mb-10 max-w-sm">
+  <div class="flex md:hidden items-center gap-2 mb-6">
+    <span class="text-ash-400 text-sm">Step 2 of 3</span>
+    <span class="text-ash-400 text-sm">·</span>
+    <span class="text-white text-sm font-semibold">Checkout</span>
+  </div>
+
+  <div class="hidden md:flex items-center mb-10 max-w-sm">
     <!-- Step 1 — Cart (completed) -->
     <div class="flex flex-col items-center">
       <div class="w-8 h-8 rounded-full bg-fire-600 flex items-center justify-center flex-shrink-0">
@@ -78,6 +84,7 @@
       </div>
       <span class="text-ash-300 text-xs font-medium uppercase tracking-widest mt-1.5">Cart</span>
     </div>
+
     <!-- Connector -->
     <div class="flex-1 h-px bg-fire-600 mx-2 mb-3.5"></div>
     <!-- Step 2 — Checkout (active) -->
@@ -87,6 +94,7 @@
       </div>
       <span class="text-white text-xs font-semibold uppercase tracking-widest mt-1.5">Checkout</span>
     </div>
+
     <!-- Connector -->
     <div class="flex-1 h-px bg-forge-700 mx-2 mb-3.5"></div>
     <!-- Step 3 — Confirmation (upcoming) -->
@@ -190,11 +198,11 @@
         <h3 class="font-display text-lg font-bold text-white uppercase tracking-tight">Bank Transfer Details</h3>
         <div class="flex justify-between items-center">
           <span class="text-ash-400 text-sm">Bank Name</span>
-          <span class="text-white text-sm font-medium">First Bank Nigeria</span>
+          <span class="text-white text-sm font-medium">Moniepoint MFB</span>
         </div>
         <div class="flex justify-between items-center">
           <span class="text-ash-400 text-sm">Account Name</span>
-          <span class="text-white text-sm font-medium">KunoFitness Ltd</span>
+          <span class="text-white text-sm font-medium">KunoFitness Equipment</span>
         </div>
         <div class="flex justify-between items-center">
           <span class="text-ash-400 text-sm">Account Number</span>

@@ -11,9 +11,9 @@ import {
 } from "./whatsapp.js";
 
 // ← Update before go-live: replace with client's real account number
-const ACCT_NUMBER = "1234567890";
+const ACCT_NUMBER = "6752194227";
 
-// ─── Init Single-Page Checkout ────────────────────────────────
+// Init Single-Page Checkout
 export function initCheckout() {
   const cart  = getCart();
   const total = getCartTotal();
@@ -29,7 +29,7 @@ export function initCheckout() {
   initFormValidation();
 }
 
-// ─── Render Order Summary ─────────────────────────────────────
+// Render Order Summary
 function renderOrderSummary(cart, total) {
   const summaryItemsEl = document.getElementById("co-summary-items");
   const summaryTotalEl = document.getElementById("co-summary-total");
@@ -50,7 +50,7 @@ function renderOrderSummary(cart, total) {
   if (summaryTotalEl) summaryTotalEl.textContent = formatPrice(total);
 }
 
-// ─── Payment Method Selection ─────────────────────────────────
+// Payment Method Selection
 function initPaymentSelection(cart, total) {
   const optWhatsapp   = document.getElementById("opt-whatsapp");
   const optBank       = document.getElementById("opt-bank");
@@ -103,7 +103,7 @@ function initPaymentSelection(cart, total) {
   initBankTransferAction(cart, total);
 }
 
-// ─── WhatsApp Order Button ────────────────────────────────────
+// WhatsApp Order Button 
 function initWhatsAppAction(cart, total) {
   const btn = document.getElementById("btn-whatsapp-order");
   if (!btn) return;
@@ -143,7 +143,7 @@ function initWhatsAppAction(cart, total) {
   });
 }
 
-// ─── Bank Transfer Action Button ──────────────────────────────
+// Bank Transfer Action Button
 function initBankTransferAction(cart, total) {
   const btn         = document.getElementById("btn-bank-notify");
   const copyAcctBtn = document.getElementById("co-copy-acct-btn");
@@ -213,7 +213,7 @@ function initBankTransferAction(cart, total) {
   });
 }
 
-// ─── Get Customer Info from Form ──────────────────────────────
+// Get Customer Info from Form
 function getCustomerInfo() {
   return {
     name:    document.getElementById("co-name")?.value.trim()    || "",
@@ -223,7 +223,7 @@ function getCustomerInfo() {
   };
 }
 
-// ─── Validate and Show Errors ─────────────────────────────────
+// Validate and Show Errors
 function validateAndShow(customerInfo) {
   // Clear existing errors
   ["co-name", "co-phone", "co-address"].forEach((id) => {
@@ -244,7 +244,7 @@ function validateAndShow(customerInfo) {
   return true;
 }
 
-// ─── Real-Time Field Validation on Blur ───────────────────────
+// Real-Time Field Validation on Blur
 function initFormValidation() {
   ["co-name", "co-phone", "co-address"].forEach((id) => {
     const el = document.getElementById(id);
