@@ -65,6 +65,7 @@
       <a href="about.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">About</a>
       <a href="contact.html" data-nav class="text-ash-300 hover:text-white text-sm font-medium transition-colors">Contact</a>
     </div>
+
     <div class="flex items-center gap-4">
       <a href="cart.html" class="relative text-ash-300 hover:text-white transition-colors" aria-label="Shopping cart">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
@@ -77,28 +78,25 @@
   </div>
 
 
-
   <!-- MOBILE MENU -->
-  <div id="mobile-menu" class="mobile-menu-closed md:hidden border-t border-forge-700 bg-forge-900 px-4 py-4 flex flex-col gap-4">
-    <a href="index.html" class="text-ash-300 hover:text-white text-sm font-medium">Home</a>
-    <a href="products.html" class="text-ash-300 hover:text-white text-sm font-medium">Products</a>
-    <a href="blog.html" class="text-ash-300 hover:text-white text-sm font-medium">Blog</a>
-    <a href="about.html" class="text-ash-300 hover:text-white text-sm font-medium">About</a>
-    <a href="contact.html" class="text-ash-300 hover:text-white text-sm font-medium">Contact</a>
+  <div id="mobile-menu" class="mobile-menu-closed md:hidden border-t border-forge-700 bg-forge-900">
+    <div class="px-4 py-4 flex flex-col gap-4">
+      <a href="index.html" class="text-ash-300 hover:text-white text-sm font-medium">Home</a>
+      <a href="products.html" class="text-ash-300 hover:text-white text-sm font-medium">Products</a>
+      <a href="blog.html" class="text-ash-300 hover:text-white text-sm font-medium">Blog</a>
+      <a href="about.html" class="text-ash-300 hover:text-white text-sm font-medium">About</a>
+      <a href="contact.html" class="text-ash-300 hover:text-white text-sm font-medium">Contact</a>
+    </div>
   </div>
+
 </nav>
+
 
 <main id="main-content" class="pt-24 pb-20 max-w-7xl mx-auto px-4 sm:px-6">
 
 
   <!-- PROGRESS -->
-  <div class="flex md:hidden items-center gap-2 mb-6">
-    <span class="text-ash-400 text-sm">Step 1 of 3</span>
-    <span class="text-ash-400 text-sm">·</span>
-    <span class="text-white text-sm font-semibold">Cart</span>
-  </div>
-
-  <div class="hidden md:flex items-center mb-10 max-w-sm">
+  <div class="flex items-center mb-10 max-w-sm">
     <!-- Step 1 — Cart (active) -->
     <div class="flex flex-col items-center">
       <div class="w-8 h-8 rounded-full bg-fire-600 flex items-center justify-center ring-2 ring-fire-600 ring-offset-2 ring-offset-forge-900 flex-shrink-0">
