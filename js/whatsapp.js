@@ -41,7 +41,7 @@ Payment: To be arranged on WhatsApp
 `.trim();
 }
 
-// ─── Build Bank Transfer Confirmation Message ─────────────────
+// Build Bank Transfer Confirmation Message
 export function buildBankTransferConfirmation(customerInfo, orderRef, cart, total) {
   if (!cart.length) return null;
 
@@ -69,7 +69,7 @@ Please confirm receipt and process my delivery.
 `.trim();
 }
 
-// ─── Open WhatsApp with message ───────────────────────────────
+//  Open WhatsApp with message
 export function openWhatsApp(message, fallbackElId) {
   const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
   const opened = window.open(url, "_blank", "noopener,noreferrer");
@@ -86,7 +86,7 @@ export function openWhatsApp(message, fallbackElId) {
   return true;
 }
 
-// ─── Validation Utilities (shared) ───────────────────────────
+//  Validation Utilities (shared) 
 export function validateCheckoutFields(fields) {
   const errors = [];
   const { name, phone, address } = fields;

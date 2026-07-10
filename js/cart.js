@@ -7,7 +7,7 @@ const CART_KEY = "kf_cart";
 // Future: individual products can override this via a maxQty field in products.json
 export const MAX_QTY = 10;
 
-// ─── Core Cart API ────────────────────────────────────────────
+// Core Cart API
 export function getCart() {
   try {
     return JSON.parse(localStorage.getItem(CART_KEY) || "[]");
@@ -77,7 +77,7 @@ export function getCartCount() {
   return getCart().reduce((sum, i) => sum + i.qty, 0);
 }
 
-// ─── Render Cart Page ─────────────────────────────────────────
+// Render Cart Page 
 export function renderCartPage() {
   const container = document.getElementById("cart-items");
   const emptyMsg = document.getElementById("cart-empty");

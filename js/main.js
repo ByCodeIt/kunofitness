@@ -1,11 +1,11 @@
-// ─── HTML Sanitizer (prevents XSS) ────────────────────────────
+// HTML Sanitizer (prevents XSS)
 export function sanitize(str) {
   const div = document.createElement("div");
   div.appendChild(document.createTextNode(String(str ?? "")));
   return div.innerHTML;
 }
 
-// ─── Debounce ─────────────────────────────────────────────────
+// Debounce
 export function debounce(fn, delay = 300) {
   let timer;
   return (...args) => {
@@ -14,12 +14,12 @@ export function debounce(fn, delay = 300) {
   };
 }
 
-// ─── Price Formatter ──────────────────────────────────────────
+// Price Formatter
 export function formatPrice(amount) {
   return "₦" + Number(amount).toLocaleString("en-NG");
 }
 
-// ─── ARIA Live Region (for screen readers) ────────────────────
+// ARIA Live Region (for screen readers)
 function ensureLiveRegion() {
   let region = document.getElementById("aria-live");
   if (!region) {
@@ -34,7 +34,7 @@ function ensureLiveRegion() {
   return region;
 }
 
-// ─── Toast Notifications ──────────────────────────────────────
+// Toast Notifications
 export function showToast(message, type = "success") {
   const existing = document.getElementById("toast");
   if (existing) existing.remove();
@@ -67,7 +67,7 @@ export function showToast(message, type = "success") {
   }, 2800);
 }
 
-// ─── Cart Count Badge ─────────────────────────────────────────
+// Cart Count Badge
 export function updateCartBadge() {
   const cart = JSON.parse(localStorage.getItem("kf_cart") || "[]");
   const total = cart.reduce((sum, i) => sum + i.qty, 0);
@@ -88,7 +88,7 @@ export function updateCartBadge() {
   });
 }
 
-// ─── Active Nav Link ──────────────────────────────────────────
+// Active Nav Link
 function setActiveNav() {
   const path = window.location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll("[data-nav]").forEach((link) => {
@@ -100,7 +100,7 @@ function setActiveNav() {
   });
 }
 
-// ─── Mobile Menu ─────────────────────────────────────────────
+// Mobile Menu
 function initMobileMenu() {
   const btn  = document.getElementById("menu-btn");
   const menu = document.getElementById("mobile-menu");
@@ -144,7 +144,7 @@ function initMobileMenu() {
   });
 }
 
-// ─── Copyright Year ───────────────────────────────────────────
+// Copyright Year
 function setCopyrightYear() {
   const year = new Date().getFullYear();
   document.querySelectorAll(".copyright-year").forEach((el) => {
@@ -152,7 +152,7 @@ function setCopyrightYear() {
   });
 }
 
-// ─── Scroll Reveal ────────────────────────────────────────────
+// Scroll Reveal
 function initScrollReveal() {
   const targets = document.querySelectorAll("[data-reveal]");
   if (!targets.length) return;
@@ -175,7 +175,7 @@ function initScrollReveal() {
 }
 
 
-// ─── Page Transitions ─────────────────────────────────────────
+// Page Transitions
 function initPageTransitions() {
   document.addEventListener("click", (e) => {
     const link = e.target.closest("a");
@@ -200,7 +200,7 @@ function initPageTransitions() {
 }
 
 
-// ─── Init ─────────────────────────────────────────────────────
+// Init
 document.addEventListener("DOMContentLoaded", () => {
   updateCartBadge();
   setActiveNav();

@@ -3,24 +3,32 @@ import { addToCart, MAX_QTY } from "./cart.js";
 
 let allProducts = [];
 
-// ─── Add-to-cart button animation ────────────────────────────
+// Add-to-cart button animation
 const CART_ICON = `<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>`;
 const CHECK_ICON = `<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>`;
 
 function animateAddToCart(btn) {
   if (!btn || btn.disabled) return;
   const originalLabel = btn.getAttribute("aria-label");
+  const originalHTML = btn.innerHTML;
+  const originalClasses = btn.className;
   btn.classList.add("btn-adding");
+  btn.style.display = "flex";
+  btn.style.alignItems = "center";
+  btn.style.justifyContent = "center";
   btn.innerHTML = CHECK_ICON;
   btn.setAttribute("aria-label", "Added to cart");
   setTimeout(() => {
-    btn.classList.remove("btn-adding");
-    btn.innerHTML = CART_ICON;
+    btn.className = originalClasses;
+    btn.style.display = "";
+    btn.style.alignItems = "";
+    btn.style.justifyContent = "";
+    btn.innerHTML = originalHTML;
     btn.setAttribute("aria-label", originalLabel);
   }, 1200);
 }
 
-// ─── Fetch with error handling ────────────────────────────────
+// Fetch with error handling
 export async function fetchProducts() {
   if (allProducts.length) return allProducts;
   try {
@@ -34,7 +42,7 @@ export async function fetchProducts() {
   }
 }
 
-// ─── Product Card ─────────────────────────────────────────────
+// Product Card
 export function renderProductCard(product) {
   const badgeColors = {
     "Best Seller": "bg-fire-500",
@@ -96,7 +104,7 @@ export function renderProductCard(product) {
   `;
 }
 
-// ─── Event delegation — no global window pollution ────────────
+// Event delegation — no global window pollution
 document.addEventListener("click", (e) => {
   const btn = e.target.closest("[data-add-to-cart]");
   if (!btn || btn.disabled) return;
@@ -108,7 +116,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
-// ─── Loading Skeleton ─────────────────────────────────────────
+// Loading Skeleton
 function renderSkeleton(count = 4) {
   return Array.from({ length: count }, () => `
     <div class="bg-forge-800 rounded-2xl overflow-hidden border border-forge-700 animate-pulse">
@@ -123,7 +131,7 @@ function renderSkeleton(count = 4) {
   `).join("");
 }
 
-// ─── Error State ──────────────────────────────────────────────
+// Error State 
 function renderError(containerId) {
   const container = document.getElementById(containerId);
   if (!container) return;
@@ -139,7 +147,7 @@ function renderError(containerId) {
   `;
 }
 
-// ─── Featured Products ────────────────────────────────────────
+// Featured Products
 export async function renderFeaturedProducts(containerId) {
   const container = document.getElementById(containerId);
   if (!container) return;
@@ -152,7 +160,7 @@ export async function renderFeaturedProducts(containerId) {
   }
 }
 
-// ─── All Products ─────────────────────────────────────────────
+// All Products
 export async function renderAllProducts(containerId) {
   const container = document.getElementById(containerId);
   if (!container) return;
@@ -167,7 +175,7 @@ export async function renderAllProducts(containerId) {
   }
 }
 
-// ─── Product Detail Page ──────────────────────────────────────
+// Product Detail Page
 export async function renderProductDetail() {
   const detailEl = document.getElementById("product-detail");
   if (!detailEl) return;

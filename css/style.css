@@ -1,4 +1,4 @@
-/* ── KunoFitness Global Styles ──────────────────────────────── */
+/* KunoFitness Global Styles */
 
 /* Base */
 body {
@@ -11,17 +11,23 @@ body {
   font-family: 'Bebas Neue', sans-serif;
 }
 
-/* ── Page Transition ─────────────────────────────────────────── */
+.font-wordmark {
+  font-family: 'DM Sans', sans-serif;
+}
+
+
+/* Page Transition */
 body {
   transition: opacity 0.3s ease-out;
 }
+
 .page-leaving {
   opacity: 0;
   transition: opacity 0.2s ease-in;
 }
 
 
-/* ── Skip Navigation (accessibility) ────────────────────────── */
+/* Skip Navigation (accessibility) */
 .skip-nav {
   position: absolute;
   top: -100%;
@@ -36,11 +42,13 @@ body {
   text-decoration: none;
   transition: top 0.2s;
 }
+
 .skip-nav:focus {
   top: 0;
 }
 
-/* ── Focus Ring (keyboard navigation) ───────────────────────── */
+
+/* Focus Ring (keyboard navigation) */
 .focus-ring:focus-visible,
 a:focus-visible,
 button:focus-visible,
@@ -53,13 +61,14 @@ textarea:focus-visible {
 }
 
 
-/* ── Mobile Menu ─────────────────────────────────────────────── */
+/* Mobile Menu */
 .mobile-menu-closed {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
   transition: max-height 0.22s ease-in, opacity 0.22s ease-in;
 }
+
 .mobile-menu-open {
   max-height: 320px;
   opacity: 1;
@@ -67,7 +76,8 @@ textarea:focus-visible {
   transition: max-height 0.28s ease-out, opacity 0.28s ease-out;
 }
 
-/* ── Screen Reader Only ──────────────────────────────────────── */
+
+/* Screen Reader Only */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -80,7 +90,8 @@ textarea:focus-visible {
   border-width: 0;
 }
 
-/* ── Buttons ─────────────────────────────────────────────────── */
+
+/* Buttons */
 .btn-primary {
   background: #C41F2F;
   color: #fff;
@@ -93,10 +104,12 @@ textarea:focus-visible {
   display: inline-block;
   transition: all 0.2s;
 }
+
 .btn-primary:hover {
   background: #E02030;
   box-shadow: 0 4px 24px rgba(196, 31, 47, 0.35);
 }
+
 .btn-primary:focus-visible {
   outline: 2px solid #fff;
   outline-offset: 2px;
@@ -113,12 +126,14 @@ textarea:focus-visible {
   display: inline-block;
   transition: all 0.2s;
 }
+
 .btn-secondary:hover {
   border-color: #999;
   color: #fff;
 }
 
-/* ── Form Fields ─────────────────────────────────────────────── */
+
+/* Form Fields */
 .field {
   width: 100%;
   background: #1C1C1F;
@@ -130,13 +145,16 @@ textarea:focus-visible {
   transition: border-color 0.2s;
   outline: none;
 }
+
 .field:focus {
   border-color: #C41F2F;
   box-shadow: 0 0 0 3px rgba(196, 31, 47, 0.15);
 }
+
 .field::placeholder {
   color: #666;
 }
+
 .field[aria-invalid="true"] {
   border-color: #E02030;
 }
@@ -151,17 +169,20 @@ label {
   margin-bottom: 0.4rem;
 }
 
-/* ── Backgrounds ─────────────────────────────────────────────── */
+
+/* Backgrounds */
 .hero-bg {
   background: linear-gradient(135deg, #0A0A0B 0%, #1C1C1F 50%, #0A0A0B 100%);
 }
 
-/* ── Animations ──────────────────────────────────────────────── */
+
+/* Animations */
 @keyframes pop {
   0%   { transform: scale(0.5); opacity: 0; }
   70%  { transform: scale(1.1); }
   100% { transform: scale(1);   opacity: 1; }
 }
+
 .pop {
   animation: pop 0.5s ease-out forwards;
 }
@@ -172,11 +193,14 @@ label {
   60%  { transform: scale(1.08); }
   100% { transform: scale(1);    }
 }
+
 .btn-adding {
   animation: btn-confirm 0.4s ease-out forwards;
   background-color: #22C55E !important;
   pointer-events: none;
+  color: #ffffff !important;
 }
+
 
 @keyframes badge-pop {
   0%   { transform: scale(1);   }
@@ -184,32 +208,36 @@ label {
   70%  { transform: scale(1.1); }
   100% { transform: scale(1);   }
 }
+
 .badge-pop {
   animation: badge-pop 0.35s ease-out forwards;
 }
+
 .img-fade-out {
   opacity: 0;
   transition: opacity 0.15s ease-in;
 }
+
 .img-fade-in {
   opacity: 0;
   transition: opacity 0.15s ease-out;
 }
 
 
-/* ── Scroll Reveal ───────────────────────────────────────────── */
+/* Scroll Reveal */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.4s ease-out, transform 0.4s ease-out;
 }
+
 .reveal.revealed {
   opacity: 1;
   transform: translateY(0);
 }
 
 
-/* ── Reduced motion ──────────────────────────────────────────── */
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
