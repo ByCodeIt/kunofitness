@@ -177,6 +177,14 @@ function initScrollReveal() {
 
 // Page Transitions
 function initPageTransitions() {
+  // Fix blank screen on back/forward navigation (bfcache restore)
+  window.addEventListener("pageshow", (e) => {
+    if (e.persisted) {
+      document.body.classList.remove("page-leaving");
+      updateCartBadge();
+    }
+  });
+
   document.addEventListener("click", (e) => {
     const link = e.target.closest("a");
     if (!link) return;
